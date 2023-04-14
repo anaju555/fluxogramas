@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ALUNO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-04-14 12:16:44 "/>
+        <attribute name="created" value="QUxVTk87RUNFNDM2TUlDUk8yODsyMDIzLTA0LTE0OyIxMjowMzo1NCAiOzI0MTU="/>
+        <attribute name="edited" value="QUxVTk87RUNFNDM2TUlDUk8yODsyMDIzLTA0LTE0OyIxMjoxNjo0NCAiOzI7MjUyNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="usu&#225;rio" type="String" array="False" size=""/>
+            <declare name="senha" type="String" array="False" size=""/>
+            <declare name="recorrente" type="Boolean" array="False" size=""/>
+            <while expression="recorrente==true">
+                <input variable="usu&#225;rio"/>
+                <if expression="usu&#225;rio==ana">
+                    <then>
+                        <input variable="senha"/>
+                        <if expression="senha==&quot;12345&quot;">
+                            <then>
+                                <output expression="&quot;&#243;timo!! agora voc&#234; esta logado&quot;" newline="True"/>
+                                <assign variable="recorrente" expression="false"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;usu&#225;rio ou senha invalida&quot;" newline="True"/>
+                            </else>
+                        </if>
+                    </then>
+                    <else/>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
